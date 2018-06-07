@@ -1,0 +1,9 @@
+@startuml
+actor users
+actor students
+users -> students: 批改完成绩
+students -> grades: 查看成绩和评语
+grades -> tests
+tests --> students:每个实验的信息、成绩和评语
+users <- students:老师查看成绩
+@enduml

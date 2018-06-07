@@ -1,0 +1,9 @@
+@startuml
+
+actor user
+user -> controller:登录请求
+user -> controllers:登出请求
+controller->user:成功
+controllers->user:成功
+
+@enduml

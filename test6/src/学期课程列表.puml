@@ -1,0 +1,7 @@
+@startuml
+actor user
+user -> get_terms:获取该学期
+get_terms->user:返回该学期的学生人数及信息
+user->get_subs:提供指定学期的id
+get_subs->user:返回用户指定学期的所有课程集合
+@enduml
